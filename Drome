@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+// Giuseppe Toritto
+// Palindrome Checker
+// This program will ask the user to type a three digit number and 
+// will output whether the number is a palindrome or not.
+
+public class Palindromer {
+
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		
+		// User input 
+		System.out.print("Enter a three-digit integer: ");
+		
+		// Declare input as integer
+		int number = keyboard.nextInt();
+		
+		// Declaring first and last digit
+		
+		int fDigit = number / 100;
+		int lDigit = number % 10;
+		
+		// Is first digit equal to last digit
+		
+		if (fDigit == lDigit) 
+			System.out.println(number + " is a palindrome");
+		
+		else 
+			System.out.println(number + " is not a palindrome");
+		
+	}
+
+}
